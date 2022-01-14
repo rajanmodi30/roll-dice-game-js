@@ -23,7 +23,7 @@ resetButton.addEventListener("click", resetGame);
  */
 function startGame() {
   currentPlayer = getRandomArbitrary(1, 3);
-  headerElement.textContent = "Player " + currentPlayer + " Turn";
+  headerElement.textContent = `Player ${currentPlayer} Turn`;
   changeActivePlayerButton();
 }
 
@@ -48,7 +48,7 @@ function rollDice() {
     }
     currentPlayer = 1;
   }
-  headerElement.textContent = "Player " + currentPlayer + " Turn";
+  headerElement.textContent = `Player " ${currentPlayer}  Turn`;
   changeActivePlayerButton();
 }
 
@@ -60,7 +60,7 @@ function gameOver(whoWon = 1) {
   rollDiceButton.style.display = "none";
   resetButton.style.display = "block";
   currentPlayer = null;
-  headerElement.textContent = "Player " + whoWon + " won 🥳";
+  headerElement.textContent = `Player ${whoWon} won 🥳`;
   changeActivePlayerButton();
 }
 function resetGame() {
