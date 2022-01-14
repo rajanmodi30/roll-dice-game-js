@@ -10,17 +10,25 @@
   </head>
   <body>
     <div class="container">
-      <h1>Player <span id="player-no-show">1</span> Turn</h1>
+      <h1 id="player-header">Player 1 Turn</h1>
       <div class="flex-box">
-        <div class="flex-columns"><h2>Score : 0</h2></div>
-        <div class="flex-columns"><h2>Score : 0</h2></div>
+        <div class="flex-columns">
+          <h2>Score : <span id="player-1-score">0</span></h2>
+        </div>
+        <div class="flex-columns">
+          <h2>Score : <span id="player-2-score">0</span></h2>
+        </div>
       </div>
       <div class="flex-box">
         <div class="flex-columns-2">
-          <button class="btn score-cards active">-</button>
+          <button class="btn score-cards active">
+            <span id="player-1-latest-dice-score">-</span>
+          </button>
         </div>
         <div class="flex-columns-2">
-          <button class="btn score-cards">-</button>
+          <button class="btn score-cards">
+            <span id="player-2-latest-dice-score">-</span>
+          </button>
         </div>
       </div>
       <div class="flex-box">
