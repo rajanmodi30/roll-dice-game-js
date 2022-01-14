@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Player <span id="player-no-show">1</span> Turn</h1>
+      <div class="flex-box">
+        <div class="flex-columns"><h2>Score : 0</h2></div>
+        <div class="flex-columns"><h2>Score : 0</h2></div>
+      </div>
+      <div class="flex-box">
+        <div class="flex-columns-2">
+          <button class="btn score-cards active">-</button>
+        </div>
+        <div class="flex-columns-2">
+          <button class="btn score-cards">-</button>
+        </div>
+      </div>
+      <div class="flex-box">
+        <div class="flex-columns">
+          <button id="rollBtn" class="btn final-score-card">
+            Roll Dice 🎲
+          </button>
+          <button
+            id="resetBtn"
+            class="btn reset-score-card"
+            style="display: none"
+          >
+            Reset Game 🔁
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
