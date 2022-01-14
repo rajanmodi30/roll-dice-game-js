@@ -48,7 +48,7 @@ function rollDice() {
     }
     currentPlayer = 1;
   }
-  headerElement.textContent = `Player " ${currentPlayer}  Turn`;
+  headerElement.textContent = `Player ${currentPlayer} Turn`;
   changeActivePlayerButton();
 }
 
