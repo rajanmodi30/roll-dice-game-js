@@ -85,3 +85,8 @@ h2 {
   font-weight: bold;
   color: var(--color-6);
 }
+
+#rollBtn:hover,
+#resetBtn:hover {
+  cursor: pointer;
+}
